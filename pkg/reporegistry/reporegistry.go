@@ -68,7 +68,7 @@ func (r *RepoRegistry) ReposByImageTypeName(distro, arch, imageType string) ([]r
 	return repositories, nil
 }
 
-// reposByArchName returns a slice of rpmmd.RepoConfig instances, which should be used for building image types for the
+// ReposByArchName returns a slice of rpmmd.RepoConfig instances, which should be used for building image types for the
 // specific architecture and distribution. This includes by default all repositories without any image type tags specified.
 // Depending on the `includeTagged` argument value, repositories with image type tags set will be added to the returned
 // slice or not.
